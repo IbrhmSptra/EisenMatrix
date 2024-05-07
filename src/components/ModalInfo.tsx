@@ -6,7 +6,7 @@ const ModalInfo = () => {
   const infoState = useSelector((state: rootState) => state.modal.info);
   return (
     <div
-      className={`fixed left-0 right-0 mx-8 top-1/2 -translate-y-1/2 shadow-2xl border transition-all duration-300 rounded-lg overflow-hidden font-montserrat ${
+      className={`fixed left-0 right-0 mx-8 top-1/2 -translate-y-1/2 shadow-2xl border transition-all duration-300 rounded-lg overflow-hidden z-10 font-montserrat ${
         infoState ? "scale-100 opacity-100" : "scale-0 opacity-30"
       }`}
     >

@@ -1,24 +1,24 @@
 import { useSelector } from "react-redux";
 import { rootState } from "../redux/store";
-import KuadranActivity from "./KuadranActivity";
 import { Droppable } from "react-beautiful-dnd";
+import KuadranActivity from "./KuadranActivity";
 import { useDispatch } from "react-redux";
 import {
-  removeKuadran1,
-  toggleDoneKuadran1,
+  removeKuadran4,
+  toggleDoneKuadran4,
 } from "../redux/slice/activitiesSlice";
 
-const Kuadran1 = () => {
+const Kuadran4 = () => {
   const dispatch = useDispatch();
   const activities = useSelector(
-    (state: rootState) => state.activities.kuadran1
+    (state: rootState) => state.activities.kuadran4
   );
   return (
-    <div className="px-2 py-4 flex flex-col justify-between min-h-48 bg-kuadran1">
+    <div className="px-2 py-4 flex flex-col justify-between min-h-48 bg-kuadran4">
       <h1 className="font-montserrat font-semibold text-sm text-center min-h-10">
-        Urgent Important
+        Not Urgent, Not Important
       </h1>
-      <Droppable droppableId="kuadran1">
+      <Droppable droppableId="kuadran4">
         {(provided) => (
           <div
             className="space-y-2 mt-2 h-full"
@@ -38,11 +38,9 @@ const Kuadran1 = () => {
                   id={val.id}
                   index={i}
                   done={() => {
-                    dispatch(toggleDoneKuadran1(i));
+                    dispatch(toggleDoneKuadran4(i));
                   }}
-                  remove={() => {
-                    dispatch(removeKuadran1(i));
-                  }}
+                  remove={() => dispatch(removeKuadran4(i))}
                 />
               ))
             )}
@@ -54,4 +52,4 @@ const Kuadran1 = () => {
   );
 };
 
-export default Kuadran1;
+export default Kuadran4;
