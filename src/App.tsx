@@ -32,7 +32,6 @@ function App() {
   const kuadran2 = useSelector((state: rootState) => state.activities.kuadran2);
   const kuadran3 = useSelector((state: rootState) => state.activities.kuadran3);
   const kuadran4 = useSelector((state: rootState) => state.activities.kuadran4);
-  console.log(kuadran4);
 
   //function ON DRAG START -----------------------------------
   const onDragStart = () => {
@@ -41,10 +40,7 @@ function App() {
 
   //function ON DRAG END-----------------------------------
   const onDragEnd = (result: DropResult) => {
-    console.log(result);
     const { destination, source } = result;
-    console.log("destination", destination);
-    console.log("source", source);
 
     //list to kuadran 1
     if (
@@ -195,7 +191,7 @@ function App() {
         <Navbar />
         <ModalInfo />
         <List />
-        <div className="px-6 pt-8 pb-10">
+        <div className="px-6 pt-10 pb-10 sm:px-12 md:px-20 lg:px-32 xl:px-40">
           <Input />
           <div className="grid grid-cols-2 mt-10">
             <Kuadran1 />

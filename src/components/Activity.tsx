@@ -28,7 +28,7 @@ const Activity = ({ id, toDo, index }: ActivityProps) => {
               dispatch(removeActivity(index));
             }}
           >
-            <FaRegTrashAlt className="text-secondaryText hover:text-darkText" />
+            <FaRegTrashAlt className="text-secondaryText hover:text-darkText cursor-pointer" />
           </div>
         </div>
       )}

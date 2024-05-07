@@ -15,13 +15,13 @@ const List = () => {
         noteState ? "right-0" : "-right-1/2"
       }`}
     >
-      <h1 className="text-xs font-montserrat px-2 text-center mb-2">
+      <h1 className="text-xs font-montserrat px-2 text-center mb-2 lg:text-sm">
         Drag and Drop the activity into 4 box of Eisenhower Matrix
       </h1>
       <Droppable droppableId="activities">
         {(provided) => (
           <div
-            className="h-full p-2 space-y-4 overflow-y-scroll select-none"
+            className="h-full p-2 space-y-4 overflow-y-scroll select-none xl:px-6"
             ref={provided.innerRef}
             {...provided.droppableProps}
           >

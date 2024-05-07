@@ -14,8 +14,8 @@ const Kuadran2 = () => {
     (state: rootState) => state.activities.kuadran2
   );
   return (
-    <div className="px-2 py-4 flex flex-col justify-between min-h-48 bg-kuadran2">
-      <h1 className="font-montserrat font-semibold text-sm text-center min-h-10">
+    <div className="px-2 py-4 flex flex-col justify-between min-h-48 bg-kuadran2 lg:px-4">
+      <h1 className="font-montserrat font-semibold text-sm text-center min-h-10 lg:text-base">
         Not Urgent, Important
       </h1>
       <Droppable droppableId="kuadran2">

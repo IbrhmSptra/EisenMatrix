@@ -12,7 +12,7 @@ import {
 const Navbar: React.FC = () => {
   const dispatch = useDispatch();
   return (
-    <nav className="flex items-center px-6 h-12 justify-between fixed top-0 left-0 right-0 bg-white z-20">
+    <nav className="flex items-center px-6 h-12 justify-between fixed top-0 left-0 right-0 shadow-xl bg-white z-20 sm:px-12 md:px-20 lg:px-32 xl:px-40">
       <h1 className="text-darkText font-bold text-xl">
         <span className="text-secondaryText">Eisen</span>Matrix
       </h1>
