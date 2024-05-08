@@ -22,7 +22,10 @@ const ModalInfo = () => {
           make the distinction between tasks that are important, not important,
           urgent, and not urgent. It splits tasks into four boxes that
           prioritize which tasks you should focus on first and which you should
-          delegate or delete.
+          delegate or delete. Enter all your activities for today, from list
+          activites sidebar on top right corner drag and drop activity into 4
+          boxes of the Eisenhower matrix. This site does not use a database, but
+          instead uses redux-persist
         </p>
       </div>
     </div>
